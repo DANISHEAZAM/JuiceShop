@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>lco Juices</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        a{
+            font-family: sans-serif;
+            font-weight: 100;
+            
+        }
+    
+        #juicestag{
+            font-size: 50px;
+        }
+        span{
+            color: white;
+        }
+        span:hover{
+            color: #f18f00;
+        }
+       .carousel-item{
+    height: 500px;
+} 
+.carousel-item img{
+    height: 500px;
+}
+        .card-img-top{
+            height: 300px;
+        }
+        #form{
+            margin-left: 400px;
+        }
+        #sb{
+            border-radius: 5px;
+            height:40px;
+            width: 200px;
+            margin: 10px;
+            padding: 3px;
+            border: 1px solid grey;
+            padding-left: 15px;
+            transition: 0.25s;
+      }
+        #sb:focus{
+            width: 300px;
+            border-color: aqua;
+        }
+        #nextdiv{
+           
+            text-align: center;
+           
+        }
+        .jumbotron{
+            text-align: center;
+        }
+        #footer{
+            height: 600px;
+            background-color: #f18f00;
+            text-align: center;
+        }
+       
+        .nv{
+            position: fixed;
+            background-color: white;
+            width: 100%;
+        }
+     
+       
+    </style>
+</head>
+<body data-spy="scroll" data-target="#navbarrr" data-offset="150">
+   <nav class="navbar navbar-expand-lg navbar-light nv" id="navbarrr" style="z-index: 1">
+   <img src="lcolog.png" width="50px" height="100%" alt="" >
+  <a class="navbar-brand" href="#" style="margin-left:10px" ><span id="juicestag" style="color:#f18f00">Juices</span></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#sb">Best Products</a>
+      </li>
+       <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Products
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color: #f18f00">
+          <a class="dropdown-item" href="#"><span>Orange Juice</span></a>
+          <a class="dropdown-item" href="#"><span>Watermelon Juice</span></a>
+          <a class="dropdown-item" href="#"><span>Chiku Juice</span></a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="#footer">About us</a>
+      </li>
+    </ul>
+    <div id="form">
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="eg:orange juice" aria-label="Search" id="searchbox">
+      <button class="btn btn-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+    </div>
+  </div>
+</nav>
+
+
+
+
+    <div id="slide" class="carousel slide" data-ride="carousel" style="z-index: -1">
+ 
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="item1.png" class="d-block w-100"  >
+    </div>
+    <div class="carousel-item">
+      <img src="item2.png" class="d-block w-100" >
+    </div>
+    <div class="carousel-item">
+      <img src="item3.png" class="d-block w-100" >
+    </div>
+  </div>
+
+
+</div>
+<div class="jumbotron" style="background-image: url(item1.png)">
+  <h1 class="display-4" style="color: white">Best And Fresh!</h1>
+  <p class="lead" style="color: whitesmoke">We have our main branch located at jaipur.</p>
+  <hr class="my-4">
+  <p style="color: antiquewhite">Search our branch near you.</p>
+  <div id="nextdiv" style="position: absolute le">
+    <form >
+        <input  type="text" id="sb" placeholder="Enter Location">
+        <button class="btn btn-outline-success">Search</button>
+    </form>
+</div>
+</div>
+
+
+
+<div class="card-group" id="cards" style="z-index: -1">
+  <div class="card">
+    <img src="chikushake.jpeg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Chiku Shake</h5>
+      <p class="card-text">This is one of the most rated shake we have.</p>
+      <p class="card-text"><small class="text-muted">1200 shakes sold last week</small></p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="orange.jpeg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Orange Juice</h5>
+      <p class="card-text">Healthy and Happy</p>
+      <p class="card-text"><small class="text-muted">8796 sold last week</small></p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="apple.jpeg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Apple Juice</h5>
+      <p class="card-text">Buy one Get one FREE.</p>
+      <p class="card-text"><small class="text-muted">15000 sold last week</small></p>
+    </div>
+  </div>
+</div>
+
+<div id="footer" >
+    <img src="download.png" alt="" style="margin-top: 50px">
+</div>
+</body>
+</html>
